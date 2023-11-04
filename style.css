@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #85c30a;
+}
+
+h1 {
+    color: #D4F4DD;
+}
+
+.project-form {
+    background-color: #05f0e0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-form input,
+.project-form textarea,
+.project-form button {
+    display: block;
+    margin: 10px auto;
+    max-width: 90%;min-width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.project-form button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+.project-list {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-list ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.project-list li {
+    background-color: #17BEBB;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.delete {
+    background-color: #ff4444;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.projsetting{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.projdetail {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.mark{
+    background-color: #17c500;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+}
+/* Responsive */
+@media screen and (max-width:768px) {
+    .project-form{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:425px){
+    .project-form{
+        width: 75%;
+    }
+    .project-list li{
+        width: 95%;
+    }
+    .projdetail{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .projsetting{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    button{width: 50%; margin: 10px 0;}
+}
+
+@media screen and (max-width:375px) {
+    .project-form {
+        width: 75%;
+    }
+}
